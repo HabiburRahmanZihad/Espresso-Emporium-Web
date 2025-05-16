@@ -41,7 +41,7 @@ const ShowCoffe = ({ initialCoffees }) => {
     }
 
     return (
-        <div className=" bg-[url('/public/assets/more/1.png')]  bg-center bg-no-repeat">
+        <div className=" bg-[url('/assets/more/1.png')]  bg-center bg-no-repeat">
             <div className='w-9/12 mx-auto py-[120px]  lg:py-[220px] text-center'>
 
                 <p className='texl-lg text-[#1B1A1A] pb-5'>--- Sip & Savor ---</p>

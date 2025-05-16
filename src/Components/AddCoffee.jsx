@@ -42,7 +42,7 @@ const AddCoffee = () => {
     }
 
     return (
-        <div className="bg-[url('/public/assets/more/11.png')] bg-cover bg-center bg-no-repeat py-10 px-4 flex justify-center items-start">
+        <div className="bg-[url('/assets/more/11.png')] bg-cover bg-center bg-no-repeat py-10 px-4 flex justify-center items-start">
             <div className="w-full max-w-7xl mx-auto">
                 {/* Back Link */}
                 <Link

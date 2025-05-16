@@ -11,7 +11,7 @@ const Error = () => {
                 <FaHandPointLeft />
                 Back to home
             </Link>
-            <img src="/public/assets/404/404.gif" alt="" />
+            <img src="/assets/404/404.gif" alt="" />
         </div>
     );
 };

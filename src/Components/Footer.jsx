@@ -6,11 +6,11 @@ import { IoCall } from 'react-icons/io5';
 const Footer = () => {
     return (
         <>
-            <div className="bg-[url('/public/assets/more/13.jpg')] bg-cover bg-center bg-no-repeat">
+            <div className="bg-[url('/assets/more/13.jpg')] bg-cover bg-center bg-no-repeat">
                 <div className='w-9/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 pt-28 pb-12'>
                     {/* Div 1 */}
                     <div className='space-y-7'>
-                        <img className='w-20' src="/public/assets/more/logo1.png" alt="" />
+                        <img className='w-20' src="/assets/more/logo1.png" alt="" />
                         <h1 className='text-5xl font-extrabold rancho text-[#331A15] '>Espresso Emporium</h1>
                         <p className='w-10/12 text-[#1B1A1A] text-md'>Always ready to be your friend. Come & Contact with us to share your memorable moments, to share with your best companion.</p>
                         <div className='flex gap-4'>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-[url('/public/assets/more/24.jpg')] bg-cover bg-center bg-no-repeat">
+            <div className="bg-[url('/assets/more/24.jpg')] bg-cover bg-center bg-no-repeat">
                 <h1 className='py-6 text-center  text-white text-2xl rancho'>Copyright Espresso Emporium ! All Rights Reserved</h1>
             </div>
         </>

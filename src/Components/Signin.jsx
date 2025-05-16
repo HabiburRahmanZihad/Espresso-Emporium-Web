@@ -84,7 +84,7 @@ const Signin = () => {
             <div
                 className="min-h-[calc(100vh-540px)] flex items-center justify-center bg-cover bg-center bg-no-repeat p-4"
                 style={{
-                    backgroundImage: "url('/public/assets/more/24.jpg')",
+                    backgroundImage: "url('/assets/more/24.jpg')",
                 }}
             >
                 <div className="bg-white/10 backdrop-blur-lg text-white px-12 py-10 rounded-2xl shadow-2xl w-full max-w-xl border border-white/20">

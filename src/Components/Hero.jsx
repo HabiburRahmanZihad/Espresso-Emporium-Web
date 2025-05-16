@@ -10,7 +10,7 @@ const Hero = () => {
     };
     return (
         <>
-            <div className="bg-[url('/public/assets/more/3.png')] bg-cover bg-center bg-no-repeat min-h-[calc(100vh-90px)] ">
+            <div className="bg-[url('/assets/more/3.png')] bg-cover bg-center bg-no-repeat min-h-[calc(100vh-90px)] ">
 
                 <div className='py-[300px] px-4 md:px-4 lg:px-0 lg:w-1/2 lg:ml-auto lg:mr-18 space-y-5'>
 
