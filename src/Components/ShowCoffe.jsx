@@ -20,7 +20,7 @@ const ShowCoffe = ({ initialCoffees }) => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Call the API to delete the coffee
-                fetch(`http://localhost:3000/coffees/${id}`, {
+                fetch(`https://espresso-emporium-server-seven-sigma.vercel.app/coffees/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

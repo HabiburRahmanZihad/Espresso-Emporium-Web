@@ -10,19 +10,17 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents page reload
-        console.log("Form submitted");
 
         const form = e.target;
         const formData = new FormData(form);
         const { email, password, ...restFromData } = Object.fromEntries(formData.entries());
 
-        console.log(restFromData);
 
         // Call the createUser function from AuthContext
         createUser(email, password)
             .then((result) => {
                 const user = result.user;
-                console.log("User created:", user);
+
 
                 const userProfile = {
                     email,
@@ -32,7 +30,7 @@ const Signup = () => {
                 }
 
                 // Save user profile to database
-                return fetch('http://localhost:3000/users', {
+                return fetch('https://espresso-emporium-server-seven-sigma.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -43,7 +41,6 @@ const Signup = () => {
             .then((res) => res.json())
             .then((data) => {
                 if (data.insertedId) {
-                    console.log("User profile saved:", data);
                     alert("User signed up successfully");
                 }
             })
@@ -57,12 +54,9 @@ const Signup = () => {
 
 
     const handleGoogleSignup = () => {
-        console.log("Google signup clicked");
         // Add Google signup logic here
         loginGoogle()
-            .then((result) => {
-                const user = result.user;
-                console.log("User signed in with Google:", user);
+            .then(() => {
                 alert("User signed in with Google successfully");
                 // Optionally, you can redirect or show a success message here
             })
@@ -73,12 +67,11 @@ const Signup = () => {
     };
 
     const handleGithubSignup = () => {
-        console.log("GitHub signup clicked");
+
         // Add GitHub signup logic here
         loginGithub()
-            .then((result) => {
-                const user = result.user;
-                console.log("User signed in with GitHub:", user);
+            .then(() => {
+
                 alert("User signed in with GitHub successfully");
                 // Optionally, you can redirect or show a success message here
             })

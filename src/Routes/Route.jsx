@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
 
             {
                 index: true,
-                loader: () => fetch('http://localhost:3000/coffees'),
+                loader: () => fetch('https://espresso-emporium-server-seven-sigma.vercel.app/coffees'),
                 element: <Home></Home>
             },
 
@@ -33,19 +33,19 @@ export const router = createBrowserRouter([
 
             {
                 path: 'users',
-                loader: () => fetch('http://localhost:3000/users'),
+                loader: () => fetch('https://espresso-emporium-server-seven-sigma.vercel.app/users'),
                 element: <Users></Users>
             },
 
             {
                 path: 'update/:id',
-                loader: ({ params }) => fetch(`http://localhost:3000/coffees/${params.id}`),
+                loader: ({ params }) => fetch(`https://espresso-emporium-server-seven-sigma.vercel.app/coffees/${params.id}`),
                 element: <UpdateCoffee></UpdateCoffee>
             },
 
             {
                 path: 'details/:id',
-                loader: ({ params }) => fetch(`http://localhost:3000/coffees/${params.id}`),
+                loader: ({ params }) => fetch(`https://espresso-emporium-server-seven-sigma.vercel.app/coffees/${params.id}`),
                 element: <CoffeeDetails></CoffeeDetails>
             },
 

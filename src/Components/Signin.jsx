@@ -5,24 +5,20 @@ import { AuthContext } from "../Provider/AuthContext";
 import { use } from "react";
 
 const Signin = () => {
-    const { signInUser, loginGoogle, loginGithub, user } = use(AuthContext);
+    const { signInUser, loginGoogle, loginGithub } = use(AuthContext);
 
-    console.log(user);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("Form submitted");
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+
 
 
         // Call the signInUser function from AuthContext
         signInUser(email, password)
             .then((result) => {
-                const user = result.user;
-                console.log("User signed in:", user);
                 alert("User signed in successfully");
 
                 // Update last login time in the database
@@ -31,7 +27,7 @@ const Signin = () => {
                     lastSignInTime: result?.user?.metadata?.lastSignInTime,
                 }
 
-                fetch(`http://localhost:3000/users`, {
+                fetch(`https://espresso-emporium-server-seven-sigma.vercel.app/users`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json",
@@ -39,8 +35,7 @@ const Signin = () => {
                     body: JSON.stringify(signInInfo),
                 })
                     .then((res) => res.json())
-                    .then((data) => {
-                        console.log("Last sign-in time updated:", data);
+                    .then(() => {
                         // Optionally, you can redirect or show a success message here
                     })
                     .catch((error) => {
@@ -56,13 +51,11 @@ const Signin = () => {
     };
 
     const handleGoogleSignin = () => {
-        console.log("Google sign-in clicked");
+
         // Add Google sign-in logic here
 
         loginGoogle()
-            .then((result) => {
-                const user = result.user;
-                console.log("User signed in with Google:", user);
+            .then(() => {
                 alert("User signed in with Google successfully");
                 // Optionally, you can redirect or show a success message here
             })
@@ -73,12 +66,10 @@ const Signin = () => {
     };
 
     const handleGithubSignin = () => {
-        console.log("GitHub sign-in clicked");
+
         // Add GitHub sign-in logic here
         loginGithub()
-            .then((result) => {
-                const user = result.user;
-                console.log("User signed in with GitHub:", user);
+            .then(() => {
                 alert("User signed in with GitHub successfully");
                 // Optionally, you can redirect or show a success message here
             })

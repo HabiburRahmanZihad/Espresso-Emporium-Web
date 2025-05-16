@@ -11,8 +11,6 @@ const Users = () => {
 
     const { user, deleteCurrentUser } = useContext(AuthContext);
 
-    console.log(user);
-
     const handleDeleteUser = (targetUserId, targetEmail) => {
         Swal.fire({
             title: "Are you sure?",
@@ -25,7 +23,7 @@ const Users = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // First delete from your own DB
-                fetch(`http://localhost:3000/users/${targetUserId}`, {
+                fetch(`https://espresso-emporium-server-seven-sigma.vercel.app/users/${targetUserId}`, {
                     method: "DELETE",
                 })
                     .then((res) => res.json())

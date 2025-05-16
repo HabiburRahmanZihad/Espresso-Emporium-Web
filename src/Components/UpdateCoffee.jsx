@@ -15,7 +15,7 @@ const UpdateCoffee = () => {
         const updatedCoffee = Object.fromEntries(formData.entries());
 
         // Send the data to the server
-        fetch(`http://localhost:3000/coffees/${_id}`, {
+        fetch(`https://espresso-emporium-server-seven-sigma.vercel.app/coffees/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
