@@ -1,0 +1,81 @@
+
+
+**Name:** Americano Coffee
+**Price:** 999
+**Supplier:** Cappu Authorizer
+**Taste:** Sweet and hot
+**Category:** Americano
+**Details:** Espresso with hot water
+**Photo:** [https://i.ibb.co/KxkcT2WQ/1.png](https://i.ibb.co/KxkcT2WQ/1.png)
+
+---
+
+**Name:** Cappuccino
+**Price:** 1099
+**Supplier:** Cappu Authorizer
+**Taste:** Smooth and creamy
+**Category:** Cappuccino
+**Details:** Espresso with steamed milk and foam
+**Photo:** [https://i.ibb.co/Z6wGDV6k/2.png](https://i.ibb.co/Z6wGDV6k/2.png)
+
+---
+
+**Name:** Latte
+**Price:** 899
+**Supplier:** Latte Legends
+**Taste:** Mild and milky
+**Category:** Latte
+**Details:** Espresso with steamed milk
+**Photo:** [https://i.ibb.co/1fCB3c8d/3.png](https://i.ibb.co/1fCB3c8d/3.png)
+
+---
+
+**Name:** Espresso
+**Price:** 799
+**Supplier:** Shot Bros
+**Taste:** Strong and bold
+**Category:** Espresso
+**Details:** Pure espresso shot
+**Photo:** [https://i.ibb.co/J04mqCN/4.png](https://i.ibb.co/J04mqCN/4.png)
+
+---
+
+**Name:** Mocha
+**Price:** 1199
+**Supplier:** Mocha Makers
+**Taste:** Chocolatey and sweet
+**Category:** Mocha
+**Details:** Espresso with chocolate and milk
+**Photo:** [https://i.ibb.co/3mJzn7Qn/5.png](https://i.ibb.co/3mJzn7Qn/5.png)
+
+---
+
+**Name:** Macchiato
+**Price:** 999
+**Supplier:** Caffeine Kings
+**Taste:** Rich and bold
+**Category:** Macchiato
+**Details:** Espresso with a dollop of milk foam
+**Photo:** [https://i.ibb.co/VWGW8jNP/6.png](https://i.ibb.co/VWGW8jNP/6.png)
+
+---
+
+**Name:** Flat White
+**Price:** 950
+**Supplier:** Latte Legends
+**Taste:** Smooth and balanced
+**Category:** Flat White
+**Details:** Espresso with velvety steamed milk
+**Photo:** [https://i.ibb.co/67SSh6XJ/16.png](https://i.ibb.co/67SSh6XJ/16.png)
+
+---
+
+**Name:** Iced Coffee
+**Price:** 899
+**Supplier:** Cool Brews
+**Taste:** Chilled and refreshing
+**Category:** Cold Coffee
+**Details:** Brewed coffee served over ice
+**Photo:** [https://i.ibb.co/NgBWGYQz/img-03.png](https://i.ibb.co/NgBWGYQz/img-03.png)
+
+
